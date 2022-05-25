@@ -1,0 +1,26 @@
+[
+  {
+    "cod_equipo": "1",
+    "nom_equipo": "Torta de Chocolate",
+    "uniforme": "35",
+    "num_tecnicos": "5.00",
+    "escudo": "torta-de-chocolate",
+    "sedes_equipo": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ]
+  },
+  {
+    "cod_equipo": "2",
+    "nom_equipo": "Tortin",
+    "uniforme": "35",
+    "num_tecnicos": "5.00",
+    "escudo": "torta-de-chocolate",
+    "sedes_equipo": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ]
+  }
+]
