@@ -11,13 +11,17 @@ namespace Models
         public string habil { get; set; }
         public string buena_tecnica { get; set; }
         public string distribucion { get; set; }
-        public JUVolante()
+        public JUVolante(string cod, string nombre, string ci, int num,
+                         double sueldo, string hab, string tecnica, string distrib)
         {
-
-        }
-        public void Creador()
-        {
-
+            cod_jugador = cod;
+            nom_jugador = nombre;
+            ci_jugador = ci;
+            num_camiseta = num;
+            sueldo_jugador = sueldo;
+            habil = hab;
+            buena_tecnica = tecnica;
+            distribucion = distrib;
         }
     }
 }

@@ -17,28 +17,9 @@ namespace Views.Jugador
             InitializeComponent();
         }
 
-        private void btMinimizar_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("¿Esta seguro de salir?",
-                     "Cuadro de Dialogo", MessageBoxButtons.YesNo);
-            switch (dr)
-            {
-                case DialogResult.Yes:
-                    this.Close();
-                    break;
-                case DialogResult.No:
-                    break;
-            }
-        }
-
-        private void btSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            //Guardar
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +15,33 @@ namespace Views.Running
 {
     public partial class FrmSimul : Form
     {
+        EquipoController<Equipo> listaEquipos = new EquipoController<Equipo>("equipos.json");
         public FrmSimul()
         {
             InitializeComponent();
+            listaEquipos.Cargar();
+            mostrarEquipoA(listaEquipos.lista);
+            mostrarEquipoB(listaEquipos.lista);
+            cmbEquipoA.SelectedIndex = 0;
+            cmbEquipoB.SelectedIndex = 1;
+
+        }
+        //Lista Equipos
+        public void mostrarEquipoA(List<Equipo> listaDataGrid)
+        {
+            cmbEquipoA.Items.Clear();
+            foreach (Equipo item in listaDataGrid)
+            {
+                cmbEquipoA.Items.Add(item.nom_equipo);
+            }
+        }
+        public void mostrarEquipoB(List<Equipo> listaDataGrid)
+        {
+            cmbEquipoB.Items.Clear();
+            foreach (Equipo item in listaDataGrid)
+            {
+                cmbEquipoB.Items.Add(item.nom_equipo);
+            }
         }
         //Mover Formulario
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -53,14 +79,6 @@ namespace Views.Running
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            Bitmap bmp = new Bitmap(PbCancha.Width, PbCancha.Height);
-            //PaintPixel(bmp,30,30,Color.Black);
-            bmp.SetPixel(30,30, Color.Black);
-            PbCancha.Image = bmp;
         }
     }
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "cod_equipo": 612103,
+    "nom_equipo": "Blomming",
+    "uniforme": "Celeste / Blanco",
+    "num_tecnicos": 3,
+    "escudo": "escudo",
+    "sedes_equipo": [
+      "Tahuichi"
+    ]
+  },
+  {
+    "cod_equipo": 776741,
+    "nom_equipo": "Wilstermann",
+    "uniforme": "Rojo / Blanco",
+    "num_tecnicos": 2,
+    "escudo": "escudo",
+    "sedes_equipo": [
+      "Felix Capriles"
+    ]
+  }
+]

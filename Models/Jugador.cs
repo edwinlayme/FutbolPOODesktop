@@ -13,15 +13,11 @@ namespace Models
         public string nom_jugador { get; set; }
         public string ci_jugador { get; set; }
         public int num_camiseta { get; set; }
-        public float sueldo_jugador { get; set; }
+        public double sueldo_jugador { get; set; }
         //Constructor
        public Jugador()
         {
-
-        }
-        public void Jugar()
-        {
-
+           
         }
     }
 }

@@ -132,6 +132,7 @@
       "Controllers >= 1.0.0",
       "FontAwesome.Sharp >= 5.15.4",
       "Guna.UI2.WinForms >= 2.0.3.2",
+      "Models >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
@@ -169,6 +170,9 @@
           "projectReferences": {
             "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Controllers\\Controllers.csproj": {
               "projectPath": "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Controllers\\Controllers.csproj"
+            },
+            "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Models\\Models.csproj"
             }
           }
         }

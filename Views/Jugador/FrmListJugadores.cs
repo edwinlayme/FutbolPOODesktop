@@ -19,14 +19,15 @@ namespace Views.Jugador
 
         private void btnAddJugador_Click(object sender, EventArgs e)
         {
-            FrmAddJugador frm = new Jugador.FrmAddJugador();
-            frm.Show();
+            FrmEditJugador frm = new Jugador.FrmEditJugador();
+            frm.btMinimizar.Visible = true;
+            frm.btSalir.Visible = true;
+            frm.ShowDialog();
          }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("¿Esta seguro de salir?",
-                     "SALIR APLICACION", MessageBoxButtons.YesNo);
+            DialogResult dr = MessageBox.Show("¿Esta seguro de salir?","SALIR APLICACION", MessageBoxButtons.YesNo);
             switch (dr)
             {
                 case DialogResult.Yes:

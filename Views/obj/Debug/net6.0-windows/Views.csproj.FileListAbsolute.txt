@@ -22,10 +22,8 @@ C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-win
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.FrMain.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Properties.Resources.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
-C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Equipo.FrmListEquipos.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\Img\futIcono.ico
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\Guna.UI2.dll
-C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Equipo.FrmAddEquipo.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Desarrollador.FrmDesarrollador.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Jugador.FrmListJugadores.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Manual.FrmGuiaUsuario.resources
@@ -35,6 +33,8 @@ C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-win
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\Img\campo-de-futbol.png
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Running.FrmSimul.resources
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Jugador.FrmAddJugador.resources
-C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\Archivos\equipo.json
-C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\Archivos\jugadores.json
 C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Equipos.FrmAddEquipo.resources
+C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Equipos.FrmListEquipos.resources
+C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Equipos.FrmEditEquipo.resources
+C:\Users\Administrador\source\repos\ProyectoFutbolPOO\Views\obj\Debug\net6.0-windows\Views.Jugador.FrmEditJugador.resources

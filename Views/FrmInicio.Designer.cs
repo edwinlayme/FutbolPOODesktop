@@ -118,7 +118,7 @@
             this.btnJugar.Name = "btnJugar";
             this.btnJugar.Size = new System.Drawing.Size(200, 51);
             this.btnJugar.TabIndex = 0;
-            this.btnJugar.Text = "Iniciar      ";
+            this.btnJugar.Text = "Competir  ";
             this.btnJugar.UseVisualStyleBackColor = false;
             this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
             // 

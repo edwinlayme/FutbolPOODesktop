@@ -4,10 +4,13 @@
     <Compile Update="Desarrollador\FrmDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Equipo\FrmAddEquipo.cs">
+    <Compile Update="Equipos\FrmAddEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Equipo\FrmListEquipos.cs">
+    <Compile Update="Equipos\FrmEditEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Equipos\FrmListEquipos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrMain.cs">
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Jugador\FrmAddJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Jugador\FrmEditJugador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Jugador\FrmListJugadores.cs">

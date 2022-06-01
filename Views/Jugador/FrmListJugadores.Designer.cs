@@ -38,8 +38,8 @@
             this.CIJugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomJugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumCamiseta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCancel = new FontAwesome.Sharp.IconButton();
-            this.btnAddJugador = new FontAwesome.Sharp.IconButton();
+            this.btnEditJugador = new FontAwesome.Sharp.IconButton();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -132,50 +132,50 @@
             this.NumCamiseta.HeaderText = "Camiseta Número";
             this.NumCamiseta.Name = "NumCamiseta";
             // 
-            // btnCancel
+            // btnEditJugador
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Tomato;
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.btnCancel.IconColor = System.Drawing.Color.Gold;
-            this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancel.IconSize = 32;
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.Location = new System.Drawing.Point(392, 368);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(136, 34);
-            this.btnCancel.TabIndex = 18;
-            this.btnCancel.Text = "SALIR";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnEditJugador.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEditJugador.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditJugador.FlatAppearance.BorderSize = 0;
+            this.btnEditJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditJugador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditJugador.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEditJugador.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.btnEditJugador.IconColor = System.Drawing.Color.Azure;
+            this.btnEditJugador.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditJugador.IconSize = 32;
+            this.btnEditJugador.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditJugador.Location = new System.Drawing.Point(12, 375);
+            this.btnEditJugador.Name = "btnEditJugador";
+            this.btnEditJugador.Size = new System.Drawing.Size(186, 34);
+            this.btnEditJugador.TabIndex = 17;
+            this.btnEditJugador.Text = "EDITAR JUGADOR";
+            this.btnEditJugador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditJugador.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnEditJugador.UseVisualStyleBackColor = false;
+            this.btnEditJugador.Click += new System.EventHandler(this.btnAddJugador_Click);
             // 
-            // btnAddJugador
+            // btnSalir
             // 
-            this.btnAddJugador.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddJugador.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddJugador.FlatAppearance.BorderSize = 0;
-            this.btnAddJugador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddJugador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAddJugador.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAddJugador.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.btnAddJugador.IconColor = System.Drawing.Color.Azure;
-            this.btnAddJugador.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAddJugador.IconSize = 32;
-            this.btnAddJugador.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddJugador.Location = new System.Drawing.Point(12, 368);
-            this.btnAddJugador.Name = "btnAddJugador";
-            this.btnAddJugador.Size = new System.Drawing.Size(186, 34);
-            this.btnAddJugador.TabIndex = 17;
-            this.btnAddJugador.Text = "NUEVO JUGADOR";
-            this.btnAddJugador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddJugador.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAddJugador.UseVisualStyleBackColor = false;
-            this.btnAddJugador.Click += new System.EventHandler(this.btnAddJugador_Click);
+            this.btnSalir.BackColor = System.Drawing.Color.Tomato;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnSalir.IconColor = System.Drawing.Color.Gold;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 32;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.Location = new System.Drawing.Point(373, 376);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(160, 34);
+            this.btnSalir.TabIndex = 18;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmListJugadores
             // 
@@ -183,8 +183,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(540, 435);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAddJugador);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnEditJugador);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
@@ -212,7 +212,7 @@
         private DataGridViewTextBoxColumn CIJugador;
         private DataGridViewTextBoxColumn NomJugador;
         private DataGridViewTextBoxColumn NumCamiseta;
-        private FontAwesome.Sharp.IconButton btnCancel;
-        private FontAwesome.Sharp.IconButton btnAddJugador;
+        public FontAwesome.Sharp.IconButton btnEditJugador;
+        public FontAwesome.Sharp.IconButton btnSalir;
     }
 }

@@ -8,6 +8,7 @@
     <dependencies>
       <group targetFramework="net6.0-windows7.0">
         <dependency id="Controllers" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Models" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="FontAwesome.Sharp" version="5.15.4" exclude="Build,Analyzers" />
         <dependency id="Guna.UI2.WinForms" version="2.0.3.2" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />

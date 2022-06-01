@@ -10,14 +10,19 @@ namespace Models
     {
         public string agil { get; set; }
         public string rapido { get; set; }
-        public bool seguro { get; set; }
-        public JUArquero()
+        public string seguro { get; set; }
+        // Herencia y Constructor
+        public JUArquero(string cod, string nombre, string ci, int num,
+                         double sueldo, string ag, string rap, string seg)
         {
-
-        }
-        public void AtajarBalon()
-        {
-
+            cod_jugador = cod;
+            nom_jugador = nombre;
+            ci_jugador = ci;
+            num_camiseta = num;
+            sueldo_jugador = sueldo;
+            agil = ag;
+            rapido = rap;
+            seguro = seg;
         }
     }
 }

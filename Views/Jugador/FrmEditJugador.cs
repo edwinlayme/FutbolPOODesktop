@@ -8,33 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Views.Equipo
+namespace Views.Jugador
 {
-    public partial class FrmListEquipos : Form
+    public partial class FrmEditJugador : Form
     {
-        public FrmListEquipos()
+        public FrmEditJugador()
         {
             InitializeComponent();
         }
 
-        private void btnAddEquipo_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            FrmAddEquipo frmAdd = new FrmAddEquipo();
-            frmAdd.Show();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-          DialogResult dr = MessageBox.Show("¿Esta seguro de salir?",
+            DialogResult dr = MessageBox.Show("¿Esta seguro de salir?",
          "SALIR APLICACION", MessageBoxButtons.YesNo);
             switch (dr)
             {
                 case DialogResult.Yes:
-                    Application.Exit();
+                    this.Close();
                     break;
                 case DialogResult.No:
                     break;
             }
+        }
+
+
+        private void btMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

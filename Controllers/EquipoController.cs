@@ -1,42 +1,55 @@
-﻿using Models;
+﻿using System.IO;
+using Models;
 using Newtonsoft.Json;
 
 namespace Controllers
 {
-    public class EquipoController
+    public class EquipoController<T>
     {
 
-        private Equipo equipo;
-        //public List<Equipo> equipos;
-        //Directorio donde se Almacena el Archivo
-        public static string path = @"\Equipos.json";
-        public EquipoController()
+        public List<T> lista = new List<T>();
+        public string path;
+        public EquipoController(string ruta)
         {
-            equipo = new Equipo();
+            path = ruta;
         }
-        //Funcion del metodo Agregar Equipo
-        public bool AgregarEquipo(string cod, string nomEquipo, string uniforme,
-                                  int numtecnicos, string escudo, List<string> sedes)
+        //Funcion para guardar en un archivo
+        public void Guardar()
         {
-          equipo.cod_equipo = cod;
-          equipo.nom_equipo = nomEquipo;
-          equipo.uniforme = uniforme;
-          equipo.num_tecnicos = numtecnicos;
-          equipo.escudo = escudo;
-          equipo.sedes_equipo = sedes;
-            //string fileName = "WeatherForecast.json";
+            string convert = JsonConvert.SerializeObject(lista,Formatting.Indented);
+            File.WriteAllText(path, convert);
+        }
+        //Funcion para cargar lista de Equipos
+        public void Cargar()
+        {
             try
             {
-                string jsonString = JsonConvert.SerializeObject(equipo);
-                File.WriteAllText(path, jsonString);
-                return true;
+                string archivo = File.ReadAllText(path);
+                lista = JsonConvert.DeserializeObject<List<T>>(archivo);
             }
-            catch
+            catch (Exception) { }
+        }
+        public void Adicionar(T nuevo)
+        {
+            lista.Add(nuevo);
+            Guardar();
+        }
+        public List<T> Buscar(Func<T, bool> elemento)
+        {
+            return lista.Where(elemento).ToList();
+        }
+        public void Eliminar(Func<T, bool> elemento)
+        {
+            lista = lista.Where(x => !elemento(x)).ToList();
+        }
+        public void Actualizar(Func<T, bool> elemento, T nuevo)
+        {
+            lista = lista.Select(x =>
             {
-                return false;
-            }
-        
-  
+                if (elemento(x))
+                    x = nuevo;
+                return x;
+            }).ToList();
         }
     }
 }

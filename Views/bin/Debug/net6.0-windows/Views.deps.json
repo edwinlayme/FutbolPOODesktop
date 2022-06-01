@@ -11,6 +11,7 @@
           "Controllers": "1.0.0",
           "FontAwesome.Sharp": "5.15.4",
           "Guna.UI2.WinForms": "2.0.3.2",
+          "Models": "1.0.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {

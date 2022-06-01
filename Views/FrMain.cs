@@ -1,6 +1,7 @@
+using Models;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
-using Views.Equipo;
+using Views.Equipos;
 
 namespace Views
 {
@@ -24,7 +25,7 @@ namespace Views
             this.splitContainer1.Panel2.Tag = fh;
             fh.Show();
         }
-        //Mover Formulario
+        //Mover Formulario Principal Barra Superior
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -62,12 +63,18 @@ namespace Views
 
         private void BtnEditEquipo_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Equipo.FrmListEquipos());
+            if(pnMenuEquipo.Visible == true)
+               pnMenuEquipo.Visible = false;
+            else
+                pnMenuEquipo.Visible = true;
         }
 
         private void BtnListJugadores_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Jugador.FrmListJugadores());
+            if (pnMenuJugadores.Visible == true)
+                pnMenuJugadores.Visible = false;
+            else
+                pnMenuJugadores.Visible = true;
         }
 
         private void BtnGuia_Click(object sender, EventArgs e)
@@ -85,9 +92,41 @@ namespace Views
             AbrirFormInPanel(new FrmInicio());
         }
 
-        private void panelSup_Paint(object sender, PaintEventArgs e)
+        private void btnNew_Click(object sender, EventArgs e)
         {
+            AbrirFormInPanel(new Equipos.FrmAddEquipo());
+            pnMenuEquipo.Visible = false;
+        }
 
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Equipos.FrmListEquipos());
+            pnMenuEquipo.Visible = false;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+     
+            AbrirFormInPanel(new Equipos.FrmEditEquipo());
+            pnMenuEquipo.Visible = false;
+        }
+
+        private void btnAdd2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Jugador.FrmAddJugador());
+            pnMenuJugadores.Visible = false;
+        }
+
+        private void btnList2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Jugador.FrmListJugadores());
+            pnMenuJugadores.Visible = false;
+        }
+
+        private void btnEdit2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Jugador.FrmEditJugador());
+            pnMenuJugadores.Visible = false;
         }
     }
 }

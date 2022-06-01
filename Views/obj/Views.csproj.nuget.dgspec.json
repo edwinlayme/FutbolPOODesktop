@@ -117,6 +117,9 @@
             "projectReferences": {
               "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Controllers\\Controllers.csproj": {
                 "projectPath": "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Controllers\\Controllers.csproj"
+              },
+              "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Administrador\\source\\repos\\ProyectoFutbolPOO\\Models\\Models.csproj"
               }
             }
           }

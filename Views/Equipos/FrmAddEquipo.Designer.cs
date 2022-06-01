@@ -1,4 +1,4 @@
-﻿namespace Views.Equipo
+﻿namespace Views.Equipos
 {
     partial class FrmAddEquipo
     {
@@ -29,11 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btMinimizar = new FontAwesome.Sharp.IconButton();
-            this.btSalir = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCancel = new FontAwesome.Sharp.IconButton();
             this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnAddSede = new FontAwesome.Sharp.IconButton();
@@ -73,8 +70,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.btMinimizar);
-            this.panel1.Controls.Add(this.btSalir);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -82,53 +77,12 @@
             this.panel1.Size = new System.Drawing.Size(540, 32);
             this.panel1.TabIndex = 3;
             // 
-            // btMinimizar
-            // 
-            this.btMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMinimizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btMinimizar.FlatAppearance.BorderSize = 0;
-            this.btMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMinimizar.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.btMinimizar.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btMinimizar.IconColor = System.Drawing.Color.Azure;
-            this.btMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btMinimizar.IconSize = 26;
-            this.btMinimizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btMinimizar.Location = new System.Drawing.Point(475, 7);
-            this.btMinimizar.Margin = new System.Windows.Forms.Padding(0);
-            this.btMinimizar.Name = "btMinimizar";
-            this.btMinimizar.Size = new System.Drawing.Size(28, 28);
-            this.btMinimizar.TabIndex = 7;
-            this.btMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btMinimizar.UseVisualStyleBackColor = false;
-            this.btMinimizar.Click += new System.EventHandler(this.btMinimizar_Click);
-            // 
-            // btSalir
-            // 
-            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btSalir.FlatAppearance.BorderSize = 0;
-            this.btSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSalir.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.btSalir.IconColor = System.Drawing.Color.Tomato;
-            this.btSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btSalir.IconSize = 26;
-            this.btSalir.Location = new System.Drawing.Point(508, 2);
-            this.btSalir.Margin = new System.Windows.Forms.Padding(0);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(28, 28);
-            this.btSalir.TabIndex = 6;
-            this.btSalir.UseVisualStyleBackColor = false;
-            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.label2.Location = new System.Drawing.Point(186, 2);
+            this.label2.Location = new System.Drawing.Point(181, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(171, 25);
             this.label2.TabIndex = 0;
@@ -136,7 +90,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel7);
@@ -147,30 +100,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(540, 408);
+            this.panel2.Size = new System.Drawing.Size(540, 403);
             this.panel2.TabIndex = 4;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Tomato;
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnCancel.IconColor = System.Drawing.Color.Gold;
-            this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancel.IconSize = 32;
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.Location = new System.Drawing.Point(347, 365);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(160, 34);
-            this.btnCancel.TabIndex = 14;
-            this.btnCancel.Text = "CERRAR";
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAdd
             // 
@@ -180,17 +111,16 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnAdd.IconColor = System.Drawing.Color.DarkTurquoise;
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.IconSize = 32;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(33, 365);
+            this.btnAdd.Location = new System.Drawing.Point(33, 363);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(160, 34);
             this.btnAdd.TabIndex = 13;
-            this.btnAdd.Text = "AGREGAR";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Text = "GUARDAR";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -296,7 +226,6 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "ESCUDO DE EQUIPO:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel5
             // 
@@ -356,10 +285,9 @@
             // 
             this.cmbNumTecnicos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbNumTecnicos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbNumTecnicos.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbNumTecnicos.Font = new System.Drawing.Font("Segoe UI Black", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbNumTecnicos.FormattingEnabled = true;
             this.cmbNumTecnicos.Items.AddRange(new object[] {
-            "Ninguno",
             "1",
             "2",
             "3",
@@ -372,7 +300,7 @@
             this.cmbNumTecnicos.Location = new System.Drawing.Point(58, 46);
             this.cmbNumTecnicos.Name = "cmbNumTecnicos";
             this.cmbNumTecnicos.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbNumTecnicos.Size = new System.Drawing.Size(121, 29);
+            this.cmbNumTecnicos.Size = new System.Drawing.Size(121, 31);
             this.cmbNumTecnicos.TabIndex = 8;
             this.cmbNumTecnicos.Tag = "Ninguno";
             // 
@@ -448,49 +376,50 @@
             this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGenerar.FlatAppearance.BorderSize = 0;
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGenerar.IconChar = FontAwesome.Sharp.IconChar.Undo;
             this.btnGenerar.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnGenerar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGenerar.IconSize = 32;
-            this.btnGenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGenerar.Location = new System.Drawing.Point(37, 61);
+            this.btnGenerar.IconSize = 28;
+            this.btnGenerar.Location = new System.Drawing.Point(142, 38);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(160, 34);
+            this.btnGenerar.Size = new System.Drawing.Size(80, 50);
             this.btnGenerar.TabIndex = 9;
             this.btnGenerar.Text = "GENERAR";
             this.btnGenerar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnGenerar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // txtCodEquipo
             // 
             this.txtCodEquipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.txtCodEquipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCodEquipo.Enabled = false;
             this.txtCodEquipo.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCodEquipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.txtCodEquipo.Location = new System.Drawing.Point(35, 25);
+            this.txtCodEquipo.Location = new System.Drawing.Point(18, 52);
             this.txtCodEquipo.MaxLength = 10;
             this.txtCodEquipo.Name = "txtCodEquipo";
-            this.txtCodEquipo.PlaceholderText = "Ingrese Código";
-            this.txtCodEquipo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtCodEquipo.Size = new System.Drawing.Size(160, 24);
+            this.txtCodEquipo.PlaceholderText = "Codigo...";
+            this.txtCodEquipo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCodEquipo.Size = new System.Drawing.Size(113, 24);
             this.txtCodEquipo.TabIndex = 6;
             // 
             // guna2Separator1
             // 
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
             this.guna2Separator1.FillThickness = 2;
-            this.guna2Separator1.Location = new System.Drawing.Point(37, 50);
+            this.guna2Separator1.Location = new System.Drawing.Point(18, 75);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(160, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(113, 12);
             this.guna2Separator1.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(23, 3);
+            this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 7;
@@ -502,7 +431,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(540, 440);
+            this.ClientSize = new System.Drawing.Size(540, 435);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -557,9 +486,6 @@
         private Label label7;
         private TextBox txtListaSedes;
         private FontAwesome.Sharp.IconButton btnAdd;
-        private FontAwesome.Sharp.IconButton btnCancel;
-        private FontAwesome.Sharp.IconButton btMinimizar;
-        private FontAwesome.Sharp.IconButton btSalir;
         private FontAwesome.Sharp.IconButton btnAddSede;
     }
 }

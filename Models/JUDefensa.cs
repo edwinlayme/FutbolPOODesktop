@@ -11,12 +11,18 @@ namespace Models
         public string rapido { get; set; }
         public string manejo_balon { get; set; }
         public string fuerza { get; set; }
-       public JUDefensa()
+        // Herencia y Constructor
+        public JUDefensa(string cod, string nombre, string ci, int num, 
+                         double sueldo, string rap,string man,string fuer )
         {
-
-        }
-        public void Defender()
-        {
+            cod_jugador = cod;
+            nom_jugador = nombre;
+            ci_jugador = ci;
+            num_camiseta = num;
+            sueldo_jugador = sueldo;
+            rapido = rap;
+            manejo_balon = man;
+            fuerza = fuer;
 
         }
     }
